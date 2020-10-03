@@ -1,0 +1,17 @@
+.gallery-list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
+
+  li {
+    @media screen and (min-width: $tablet) {
+      width: calc((100% - 1 * 30px) / 2);
+    }
+  }
+}

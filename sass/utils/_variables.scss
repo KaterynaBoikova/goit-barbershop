@@ -1,0 +1,25 @@
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
+$colors: ("accent": #ff6c00,
+  "text-main": #303030,
+  "text-grey": #555555,
+  "text-light": #9da4bd,
+  "white": #ffffff,
+  "bg-dark": #191c26,
+  "bg-grey": #f7f7f7,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+$fonts: ("main": "Open Sans",
+  "title": "Raleway",
+  "auto": sans-serif,
+);
+
+@function getFont($key) {
+  @return map-get($fonts, $key);
+}

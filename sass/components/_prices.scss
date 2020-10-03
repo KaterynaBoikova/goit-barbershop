@@ -1,0 +1,50 @@
+#section2 {
+  background: url(../images/prices-bg.png), #111319;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.prices-list {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  li {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    color: #9da4bd;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 1*30px)/2);
+    }
+
+    .line {
+      flex-grow: 2;
+      border-bottom: 1px solid rgba(157, 164, 189, 0.12);
+      margin-right: 6px;
+      margin-left: 6px;
+    }
+  }
+
+}
+
+
+.prices .btn {
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+}

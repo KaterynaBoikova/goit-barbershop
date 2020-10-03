@@ -1,0 +1,70 @@
+#section3 {
+  background: getColor("bg-grey");
+}
+
+.team-memember {
+  text-align: center;
+
+  &:not(:last-child) {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+.team h2 {
+  margin-bottom: 44px;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 8px;
+  margin-top: 30px;
+}
+
+.position {
+  color: getColor("accent");
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 30px;
+}
+
+.team-member-social {
+  display: flex;
+  justify-content: center;
+
+  li {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  a {
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    background: getColor("white");
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: getColor("text-main");
+
+    &:hover {
+      color: getColor("accent");
+    }
+
+    svg {
+      fill: currentColor;
+    }
+  }
+}
+
+.team-list {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
