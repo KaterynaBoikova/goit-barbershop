@@ -1,3 +1,18 @@
+@media screen and (min-width:$desktop) {
+  .desktop-wrap {
+    display: flex;
+    justify-content: space-between;
+
+    .desktop-item {
+      width: calc(100%/2);
+
+      .item {
+        width: 100%;
+      }
+    }
+  }
+}
+
 #form-to-sign {
   background: #191c26;
 

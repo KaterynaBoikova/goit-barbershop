@@ -1,0 +1,49 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    a {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        color: getColor("white");
+    }
+}
+
+.navigation {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .btn {
+        margin-left: 40px;
+    }
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+
+    .logo {
+        margin-right: 71px;
+    }
+}
+
+.main-nav-links-list {
+    display: flex;
+    align-items: center;
+
+    li {
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+}

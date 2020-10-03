@@ -1,1 +1,66 @@
+.hero-main {
+    padding-left: 230px;
+    padding-bottom: 206px;
+    background-image: url(../images/Slider-img-3.jpg);
+    background-repeat: no-repeat;
+    background-position: top 0 left 115px;
+    position: relative;
 
+    .title-wrap {
+        padding-top: 272px;
+    }
+
+    p {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        color: #9DA4BD;
+    }
+}
+
+.line-header {
+    height: 1px;
+    width: 60px;
+    background: getColor("text-main");
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-social {
+    position: absolute;
+    bottom: 250px;
+    left: -110px;
+    transform: rotate(-90deg);
+
+    .nav-social-list {
+        display: flex;
+
+        li {
+            margin-left: 40px;
+        }
+
+        a {
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 15px;
+            letter-spacing: 0.2em;
+            color: #303030;
+
+            &:hover {
+                color: getColor("accent");
+            }
+        }
+
+    }
+}
+
+h1 {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF
+}

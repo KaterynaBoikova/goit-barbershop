@@ -135,6 +135,137 @@ h2.white {
   color: rgba(157, 164, 189, 0.6);
 }
 
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+header a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.navigation {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navigation .btn {
+  margin-left: 40px;
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+}
+
+.main-nav .logo {
+  margin-right: 71px;
+}
+
+.main-nav-links-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-nav-links-list li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.hero-main {
+  padding-left: 230px;
+  padding-bottom: 206px;
+  background-image: url(../images/Slider-img-3.jpg);
+  background-repeat: no-repeat;
+  background-position: top 0 left 115px;
+  position: relative;
+}
+
+.hero-main .title-wrap {
+  padding-top: 272px;
+}
+
+.hero-main p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #9DA4BD;
+}
+
+.line-header {
+  height: 1px;
+  width: 60px;
+  background: #303030;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav-social {
+  position: absolute;
+  bottom: 250px;
+  left: -110px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.nav-social .nav-social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-social .nav-social-list li {
+  margin-left: 40px;
+}
+
+.nav-social .nav-social-list a {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+
+.nav-social .nav-social-list a:hover {
+  color: #ff6c00;
+}
+
+h1 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 85px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
 #section1 h2 {
   font-size: 28px;
   line-height: 33px;
@@ -471,6 +602,23 @@ h3 {
 @media screen and (min-width: 768px) {
   .gallery-list li {
     width: calc((100% - 1 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .desktop-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .desktop-wrap .desktop-item {
+    width: calc(100%/2);
+  }
+  .desktop-wrap .desktop-item .item {
+    width: 100%;
   }
 }
 
