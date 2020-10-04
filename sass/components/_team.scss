@@ -68,3 +68,9 @@ h3 {
     justify-content: space-between;
   }
 }
+
+@media screen and (min-width: $tablet) {
+  img {
+    margin: auto;
+  }
+}

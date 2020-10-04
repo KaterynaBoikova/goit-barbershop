@@ -13,33 +13,65 @@
         line-height: 30px;
         letter-spacing: 0.02em;
         color: #9DA4BD;
+
+        @media screen and (max-width: 767px) {
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.02em;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-left: 15px;
+
+        h1 {
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: 0.05em;
+        }
+
+        @media screen and (min-width: $tablet) {
+            h1 {
+                font-size: 48px;
+                line-height: 56px;
+                letter-spacing: 0.05em;
+            }
+        }
     }
 }
 
 
-@media screen and (min-width: $desktop) {
-    .hero {
-        position: relative;
+
+.hero {
+    position: relative;
+}
+
+.bg-hero-position {
+    background-image: url(../images/Slider-img-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    top: 0;
+    background-position: center;
+    z-index: -1;
+
+    @media screen and (min-width: $tablet) {
+        width: calc(100% - (((100% - 768px) / 2) + 115px));
     }
 
-    .bg-hero-position {
-        background-image: url(../images/Slider-img-3.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: absolute;
-        height: 100%;
+    @media screen and (min-width: $desktop) {
         width: calc(100% - (((100% - 1200px) / 2) + 115px));
-        right: 0;
-        top: 0;
-        background-position: center;
-        z-index: -1;
-
     }
 }
 
-
-
-
+@media screen and (max-width: 767px) {
+    .nav-social {
+        display: none;
+    }
+}
 
 
 .line-header {

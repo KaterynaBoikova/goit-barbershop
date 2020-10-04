@@ -121,3 +121,9 @@
     }
   }
 }
+
+@media screen and (min-width: $desktop) {
+  #form-to-sign .item {
+    padding-right: 40px;
+  }
+}

@@ -12,6 +12,7 @@ header {
         line-height: 16px;
         letter-spacing: 0.1em;
         color: getColor("white");
+
     }
 }
 
@@ -24,6 +25,19 @@ header {
 
     .btn {
         margin-left: 40px;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        flex-wrap: wrap;
+
+        .order-2 {
+            order: 2;
+            margin-right: 20px;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-wrap: nowrap;
     }
 }
 
@@ -44,6 +58,41 @@ header {
     li {
         &:not(:last-child) {
             margin-right: 40px;
+        }
+    }
+}
+
+.slide-controls {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    position: absolute;
+    bottom: 40px;
+    right: 39px;
+    display: flex;
+
+    li:first-child {
+        margin-right: 60px;
+    }
+
+    a {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+        color: rgba(157, 164, 189, 0.6);
+    }
+}
+
+.navigation {
+    @media screen and (max-width: 767px) {
+
+        .main-nav-links-list,
+        .order-2,
+        .btn.btn-secondary {
+            display: none;
         }
     }
 }
