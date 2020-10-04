@@ -2,6 +2,7 @@
   font-size: 28px;
   line-height: 33px;
 }
+
 .wide {
   font-weight: normal;
   font-size: 16px;
@@ -9,6 +10,7 @@
   color: getColor("text-grey");
   margin-bottom: 20px;
 }
+
 .main-text {
   font-weight: normal;
   font-size: 14px;
@@ -23,11 +25,21 @@
     justify-content: space-between;
   }
 }
+
 .about-pictures {
   @media screen and (max-width: 767px) {
     display: none;
   }
+
   @media screen and (min-width: $tablet) {
     order: -1;
+
+  }
+}
+
+.about-pictures-list {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
   }
 }

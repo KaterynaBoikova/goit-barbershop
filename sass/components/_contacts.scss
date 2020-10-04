@@ -1,5 +1,11 @@
 #section4 {
     background: url(../images/contacts-bg.png), #191c26;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (min-width:$desktop) {
+        background: #191c26;
+    }
 
     h2 {
         text-align: center;
@@ -13,6 +19,10 @@
 .footer-address {
     margin-bottom: 44px;
     margin-top: 40px;
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 0px;
+    }
 }
 
 .footer-address-list {

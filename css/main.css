@@ -200,9 +200,6 @@ header a {
 .hero-main {
   padding-left: 230px;
   padding-bottom: 206px;
-  background-image: url(../images/Slider-img-3.jpg);
-  background-repeat: no-repeat;
-  background-position: top 0 left 115px;
   position: relative;
 }
 
@@ -216,6 +213,24 @@ header a {
   line-height: 30px;
   letter-spacing: 0.02em;
   color: #9DA4BD;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    position: relative;
+  }
+  .bg-hero-position {
+    background-image: url(../images/Slider-img-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: calc(100% - (((100% - 1200px) / 2) + 115px));
+    right: 0;
+    top: 0;
+    background-position: center;
+    z-index: -1;
+  }
 }
 
 .line-header {
@@ -309,6 +324,17 @@ h1 {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-pictures-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -613,12 +639,33 @@ h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .desktop-wrap .desktop-item {
     width: calc(100%/2);
   }
   .desktop-wrap .desktop-item .item {
     width: 100%;
+  }
+  .section-desktop {
+    background-color: #191c26;
+    position: relative;
+  }
+  .bg-position {
+    background-image: url(../images/contacts-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    top: 0;
+    background-position: center;
   }
 }
 
@@ -717,6 +764,14 @@ h3 {
 
 #section4 {
   background: url(../images/contacts-bg.png), #191c26;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 1200px) {
+  #section4 {
+    background: #191c26;
+  }
 }
 
 #section4 h2 {
@@ -732,6 +787,12 @@ h3 {
 .footer-address {
   margin-bottom: 44px;
   margin-top: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-address {
+    margin-top: 0px;
+  }
 }
 
 .footer-address-list li:not(:last-child) {
